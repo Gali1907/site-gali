@@ -1,0 +1,60 @@
+<html>
+<head >
+    <title>formulaire2</title>
+    <link rel="stylesheet" href="design.css">
+    <marquee class="s1" direction="right"><strong class="d">Voici le formulaire que vous devez remplir</strong> </marquee>
+</head>
+<body bgcolor="brown">
+    <h1 style="text-align: center;">Enregistrement des Etudiants</h1>
+    
+
+<fieldset>
+<legend style="text-align: center;">Etat civil</legend>
+<form method= "post" action="traitement.php">
+    
+    <label style="text-align: left;" for="name">Name:</label> <input type="text" name="nom" id="nom" placeholder="Entrez votre nom" tabindex="10"/>
+    <label style="text-align:right;" for="prenom">Prénoms:</label>
+    <input type="text" name="prenom" id="prenom" placeholder="Entrez votre prénom" tabindex="10"/><br /> 
+    <br />
+
+     <label style="text-align: left;" for="date">Date de naissance:</label> <input type="date" name="date" id="date" tabindex="10"/>
+      <label style="text-align: right;" for="e-mail">Email:</label>
+      <input type="email" name="e-mail" id="e-mail"  placeholder="e-mail" tabindex="10"/><br /> 
+      <br />
+      <label style="text-align: left;" for="sexe">Sexe:</label> <input type="text" name="sexe" id="sexe" placeholder="Votre sexe"  tabindex="10"/>
+      <label style="text-align: right;" for="contact">Contact:</label>
+      <input type="tel" name="contact" id="contact" placeholder="Votre numéro de téléphone" tabindex="10"/><br /> 
+</fieldset>
+
+<fieldset>
+<legend style="text-align: center;">Les Diplômes</legend>
+<input  type="checkbox" name="diplome" id="cep" tabindex="10"><label for="cep">CEP</label>
+<input type="checkbox" name="diplome"  id="bepc" tabindex="10"><label for="bepc">BEPC</label>
+<input type="checkbox" name="diplome" id="bac" tabindex="10"><label for="bac">BAC</label>
+<input type="checkbox" name="diplome" id="bts" tabindex="10"><label for="bts">BTS</label>
+
+</fieldset>
+<fieldset>
+    <legend style="text-align: center;">Votre adresse</legend>
+    <p> 
+        <textarea name="precisions" id="precisions" cols="40" rows="4" tabindex="80"></textarea> 
+</fieldset>
+<fieldset>
+<legend style="text-align:center;">Pays</legend>
+<input type="radio" name="pays" value="benin" id="benin" tabindex="40"><label for="benin">Bénin</label>
+<input type="radio" name="pays" value="senegal" id="senegal" tabindex="40"><label for="senegal">Sénégal</label>
+<input type="radio" name="pays" value="france" id="france" tabindex="40"><label for="france">France</label>
+
+</fieldset>
+<fieldset>
+<legend style="text-align: center;">Les Boutons</legend>
+<input type="submit" name="Boutons" value="Envoyer" />
+<input type="reset" name="Boutons" value="Effacer" id="Effacer" tabindex="40">
+<input type="reset" name="Boutons" value="Quitter" id="Quitter" tabindex="40">
+
+
+
+
+</fieldset>
+</body>
+</html>
