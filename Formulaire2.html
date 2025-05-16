@@ -7,10 +7,10 @@
 <body bgcolor="brown">
     <h1 style="text-align: center;">Enregistrement des Etudiants</h1>
     
-
+<form method= "post" action="traitement.php">
+    
 <fieldset>
 <legend style="text-align: center;">Etat civil</legend>
-<form method= "post" action="traitement.php">
     
     <label style="text-align: left;" for="name">Name:</label> <input type="text" name="nom" id="nom" placeholder="Entrez votre nom" tabindex="10"/>
     <label style="text-align:right;" for="prenom">Prénoms:</label>
@@ -46,7 +46,6 @@
 <input type="radio" name="pays" value="france" id="france" tabindex="40"><label for="france">France</label>
 
 </fieldset>
-    <form method="post" action="traitement.php">
 <fieldset>
 <legend style="text-align: center;">Les Boutons</legend>
 <input type="submit" name="Boutons" value="Envoyer" />
